@@ -28,3 +28,22 @@
 .flex-items>div{
     padding: 20px;
 }
+
+/* Flex columns */
+.flex-columns .row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.flex-columns .column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.flex-columns .column .column1,.flex-columns .column2{
+    height: 100%;
+    background-color: green;
+    color: white;
+}
