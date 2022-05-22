@@ -1,3 +1,18 @@
 .text-primary{
     color: green;
 }
+/* Button styling */
+.btn{
+    cursor: pointer;
+    color: white;
+    background-color:green;
+    padding:  10px 30px;
+    margin: 10px;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: inline-block;
+}
+.btn:hover{
+    opacity: 0.9;
+}
