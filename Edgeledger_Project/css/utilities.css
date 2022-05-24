@@ -78,3 +78,28 @@
 .flex-columns p{
   margin: 20px 0px;  
 }
+
+/* Section header */
+.section-header{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.section-header h2{
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.flex-grid .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.flex-grid .column{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
