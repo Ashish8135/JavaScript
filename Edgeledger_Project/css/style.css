@@ -60,6 +60,10 @@ img{
 .navbar .logo{
     font-weight: 400;
 }
+.navbar .subtitle{
+    padding: 0%;
+    margin: 0%;
+}
 
 /* Header section styling */
 
