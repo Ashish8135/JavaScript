@@ -125,3 +125,52 @@ img{
 .cases img:hover{
     opacity: 0.7;
 }
+
+
+/* callback form */
+
+.callback-form{
+    width: 100%;
+    padding: 20px 0;
+}
+.callback-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+.callback-form .form-control{
+    margin-bottom: 15px;
+}
+.callback-form input{
+    width: 100%;
+    padding: 4px;
+    height: 40px;
+    border: white 1px solid;
+}
+
+.callback-form .btn{
+    padding: 12px 0;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer a:hover{
+    color: green;
+}
+
+.footer .social > *{
+    margin-right: 30px;
+}
