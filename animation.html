@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selectors and Animation</title>
+    <title>Keyframe Animation</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            /* animation-name: animate1;
+            animation-duration:2s;
+            /* animation-iteration-count: 3; */
+            /* animation-fill-mode: forwards; */
+            /* animation-delay: 5s; */
+            /* animation-direction: alternate-reverse; */
+            /* animation-timing-function: ease-in; */
+            animation: animate1 2s forwards 1s ease-in-out;
+        }
+        @keyframes animate1{
+            /* from{
+                width: 200px;
+            } */
+            from {
+                top: 0;
+            }
+            to{
+                width: 600px;
+                background-color: red;
+                top: 400px;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box">
+
+    </div>
 </body>
 </html>
