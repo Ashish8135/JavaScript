@@ -30,7 +30,7 @@
         At velit sint, autem iure, ullam nihil quia dolor vitae aperiam maiores
         in neque enim aliquid dolore voluptatum voluptatem. Voluptatibus, veniam quasi?</p>
         <div>
-            <a href="#page-1" class="btn">Previous Page <i class="fas fa-arrow-circle-up"></i></a>
+            <a href="#page-1" class="btn btn-dark">Previous Page <i class="fas fa-arrow-circle-up"></i></a>
         </div>
         <div>
             <a href="#page-3" class="btn">Next Page <i class="fas fa-arrow-circle-down"></i></a>
@@ -60,9 +60,26 @@
         in neque enim aliquid dolore voluptatum voluptatem. Voluptatibus, veniam quasi?</p>
         <div>
             <a href="#page-3" class="btn">Previous Page <i class="fas fa-arrow-circle-up"></i></a>
-        </div>
-        
+        </div>  
     </section>
 
+    <!-- Use jquery for smooth scrolling of button -->
+    <script>
+        $('.btn').on('click',function(event){
+            if(this.hash!==''){
+                event.preventDefault();
+                const hash=this.hash
+                $('html,body').animate(
+                    {
+                        scrollTop:$(hash).offset().top
+                    },
+                    800
+                );
+            }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
 </body>
 </html>
