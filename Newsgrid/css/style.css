@@ -1,0 +1,13 @@
+:root{
+    --primary-color:brown;
+    --secondary-color:yellow;
+    --light-color:grey;
+    --dark-color:black;
+    --max-width:1100px;
+}
+
+.categary{
+    --sport-color:brown;
+    --enter-color:yellow;
+    --tech-color:grey;
+}
