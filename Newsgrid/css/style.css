@@ -1,14 +1,14 @@
 :root{
     --primary-color:brown;
     --secondary-color:yellow;
-    --light-color:grey;
+    --light-color:white;
     --dark-color:black;
     --max-width:1100px;
 }
 
-.categary{
-    --sport-color:brown;
-    --enter-color:yellow;
+.category{
+    --sport-color:yellow;
+    --enter-color:brown;
     --tech-color:blue;
 }
 *{
@@ -44,6 +44,41 @@ h1,h2,h3,h4,h5,h6{
     padding: 0 2rem;
     overflow: hidden;
 }
+
+.category{
+    display: inline-block;
+    color: black;
+    font-size: 0.55rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0.6rem;
+    border-radius: 15px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.category-sports{background-color:var(--sport-color);}
+.btn{
+    display: inline-block;
+    color: white;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
+.btn-light{
+    background-color: var(--light-color);
+}
+.btn-primary{
+    background-color: var(--primary-color);
+}
+.btn-secondary{
+    background-color: var(--secondary-color);
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
 .main-nav{
     background-color: white;
     position: sticky;
@@ -66,6 +101,7 @@ h1,h2,h3,h4,h5,h6{
 .main-nav ul li a{
     padding: 10px;
     font-weight: bold;
+    border-radius: 5px;
 }
 .main-nav ul li a.current{
     background-color: var(--primary-color);
@@ -82,4 +118,37 @@ h1,h2,h3,h4,h5,h6{
 .main-nav .social i{
     color: navy;
     margin-right:  0.5rem; ;
+}
+
+/* Showcase */
+#showcase{
+    color: white;
+    background-color: black;
+    padding: 2rem;
+    position: relative;
+}
+#showcase::before{
+    content: '';
+    background: url('../img/featured.jpg') no-repeat center center/cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+#showcase .showcase-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+#showcase .showcase-content{
+    z-index: 1;
+}
+
+/* Paragraph and h1 styling */
+.showcase-content p{
+    margin-bottom: 10px;
 }
