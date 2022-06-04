@@ -56,3 +56,30 @@ h1,h2,h3,h4,h5,h6{
     padding: 1rem;
     align-items: center;
 }
+.main-nav .logo{
+    width: 150px;
+}
+.main-nav ul{
+    display: flex;
+    justify-self: end;
+}
+.main-nav ul li a{
+    padding: 10px;
+    font-weight: bold;
+}
+.main-nav ul li a.current{
+    background-color: var(--primary-color);
+    color: aliceblue;
+}
+.main-nav ul li a:hover{
+    background-color: var(--light-color);
+    color: crimson;
+    border-radius: 5px;
+}
+.main-nav .social{
+    justify-self: center;
+}
+.main-nav .social i{
+    color: navy;
+    margin-right:  0.5rem; ;
+}
