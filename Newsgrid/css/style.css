@@ -56,6 +56,8 @@ h1,h2,h3,h4,h5,h6{
     font-weight: bold;
 }
 .category-sports{background-color:var(--sport-color);}
+.category-ent{background-color:var(--enter-color);}
+.category-tech{background-color:var(--tech-color);}
 .btn{
     display: inline-block;
     color: white;
