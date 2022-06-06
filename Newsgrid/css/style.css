@@ -1,7 +1,7 @@
 :root{
     --primary-color:brown;
     --secondary-color:yellow;
-    --light-color:white;
+    --light-color:grey;
     --dark-color:black;
     --max-width:1100px;
 }
@@ -81,6 +81,13 @@ h1,h2,h3,h4,h5,h6{
 .btn:hover{
     opacity: 0.7;
 }
+
+/* Card styling */
+.card{
+    background-color: white;
+    padding: 1rem;
+}
+
 .main-nav{
     background-color: white;
     position: sticky;
@@ -151,6 +158,13 @@ h1,h2,h3,h4,h5,h6{
 }
 
 /* Paragraph and h1 styling */
-.showcase-content p{
+#showcase .showcase-content p{
     margin-bottom: 10px;
+}
+
+/* Home article styling */
+#home-articles .article-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
 }
