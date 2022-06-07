@@ -1,6 +1,6 @@
 :root{
     --primary-color:brown;
-    --secondary-color:yellow;
+    --secondary-color:#DCA945;
     --light-color:#F4F9F4;
     --dark-color:black;
     --max-width:1100px;
@@ -294,3 +294,16 @@ color: white;
 .page-container>*:first-child{
     grid-row: 1 / span 3;
 }
+
+.l-heading{
+    font-size: 40px;
+}
+
+
+/* #articles .meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    padding: 0.5rem;
+} */
