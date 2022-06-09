@@ -26,7 +26,13 @@
     #showcase .showcase-container,
     #home-articles .article-container{
         grid-template-columns: 1fr;
+        grid-column: 1; 
+    } 
+    #main-footer .footer-container>*:last-child{
         grid-column: 1;
     }
-   
-}
+    #main-footer .footer-container > *{
+        border-bottom: #444 dotten 1px;
+        padding: bottom 1rem;
+    }
+} 
