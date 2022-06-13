@@ -119,3 +119,45 @@ switch(input){
     default :
         document.write("Wrong Input .....")
 }
+
+// Looping 
+//  let counter = 0;
+//  while(counter <=10){
+//     document.write("FresherHire");
+//     counter++;
+//  }
+
+ let counter = 0;
+ while(counter <=10){
+    counter++;
+ }
+ document.write("FresherHire");
+
+
+let count = 1;
+let sum = 0;
+while(count <=100){
+    if(count%2==0){
+        sum = sum + count;
+    }
+    count++;
+}
+document.write(sum,"  ")
+
+
+// Do while loop
+// atleast one bar print krega
+let counting = 12
+do {
+    document.write("FresherHire Do While Demo");
+    counting++;
+}
+while (counting<=10){
+}
+
+// For loop
+
+for(let counted = 0; counted<=10;counted++){
+    // document.write("Welcome to FresherHIre");
+}
+document.write("Welcome to FresherHIre");
