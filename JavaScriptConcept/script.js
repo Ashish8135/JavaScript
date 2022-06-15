@@ -217,10 +217,41 @@ outerloop:for(let counted = 0; counted<=10;counted++){
 //     document.write('Age field was blank');
 // }
 
-let response = confirm('Are you sure,You want to delete your account ?');
-if(response){
-    document.write('Account Deleted successfully.');
-}
-else{
-    document.write('Not deleted');
-}
+// let response = confirm('Are you sure,You want to delete your account ?');
+// if(response){
+//     document.write('Account Deleted successfully.');
+// }
+// else{
+//     document.write('Not deleted');
+// }
+
+
+// Type Conversion in Javascript
+
+// let type = 5 + null;
+// alert(type)
+// alert(typeof type)
+
+// let type1 = 5; 
+// alert(type1)
+// alert(typeof type1)
+
+// let newtype = String(type1)
+// alert(typeof newtype)
+
+// String Manupulation
+
+
+// let str ="Ashish";
+// let greet = `${str}`;
+// alert(greet)
+
+
+//
+
+// Array Function and method : splice,length,push,pop,shift
+
+let fruits = ["Banana", "Orange", "Apple"];
+fruits.splice(1,1)
+
+document.write(fruits);
