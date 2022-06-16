@@ -327,3 +327,32 @@ sum(4,7)
 
 //  Returning a value in JavaScript
 
+function add(num1,num2){
+    return num1 + num2;
+}
+result = add(4,6);
+document.write(result);
+
+// Anonymous function
+
+// function expression
+// let show = function(){
+//     document.write("Hello World");
+// };
+// show();
+
+
+// Anonymous function
+setTimeout(function(){
+    document.write("Hello World");
+},3000);
+
+// Immediatetly invoke function
+
+(function(){
+    document.write("Hello World !");
+    alert("Hello World");
+})();
+
+// Objects in JavaScript
+
