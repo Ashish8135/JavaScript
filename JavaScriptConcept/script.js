@@ -343,16 +343,55 @@ document.write(result);
 
 
 // Anonymous function
-setTimeout(function(){
-    document.write("Hello World");
-},3000);
+// setTimeout(function(){
+//     document.write("Hello World");
+// },3000);
 
 // Immediatetly invoke function
 
-(function(){
-    document.write("Hello World !");
-    alert("Hello World");
-})();
+// (function(){
+//     document.write("Hello World !");
+//     alert("Hello World");
+// })();
+
+document.write("<br><br>")
 
 // Objects in JavaScript
 
+let person = {
+    firstname: "Ashish",
+    lastname: "Anand",
+    branch: "CSE",
+    clg: "IIT",
+    'city name':"lakhisarai"
+};
+// document.write(person.firstname);
+// // 2nd method 
+// document.write(person['firstname']);
+// document.write(person['city name']);
+// document.write(person);
+// console.log(person);
+
+
+
+for(let key in person){
+    document.write(key + " : " + person[key]);
+    document.write("<br><br>")
+    console.log(key + "  : " + person[key]);
+}
+
+
+// Method in object
+person.sayHello = function(){
+    console.log("Hello");
+    document.write("Hello");
+}
+
+function greet(){
+    console.log("Hello World");
+    document.write("Hello JavaScript");
+}
+
+// person.sayHello();
+
+person.sayHello = greet;
