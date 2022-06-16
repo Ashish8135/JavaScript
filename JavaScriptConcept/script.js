@@ -249,9 +249,81 @@ outerloop:for(let counted = 0; counted<=10;counted++){
 
 //
 
-// Array Function and method : splice,length,push,pop,shift
+// Array Function and method : splice,length,push,pop,shift,indexof,
 
-let fruits = ["Banana", "Orange", "Apple"];
-fruits.splice(1,1)
+// let fruits = ["Banana", "Orange", "Apple"];
+// fruits.splice(1,1)
 
-document.write(fruits);
+// document.write(fruits);
+
+// Function
+
+// Predefined and custom/user defined function
+// for(let i = 1;i<=10;i++){
+//     document.write(`5 x ${i} = ${5*i}`);
+//     document.write("<br>");
+// }
+
+// Function
+// function multtable1(){
+//     for(let i = 1;i<=10;i++){
+//         document.write(`5 x ${i} = ${5*i}`);
+//         document.write("<br>");
+//     }
+//     document.write("<br><br>");
+// }
+
+// multtable1()
+
+
+
+// function with parameter
+// function multtable(num){
+//     for(let i = 1;i<=10;i++){
+//         document.write(`${num} x ${i} = ${num*i}`);
+//         document.write("<br>");
+//     }
+// }
+
+// multtable(7)
+
+// function add(num1,num2){
+//     result = num1 + num2
+// }
+// document.write("<br><br>");
+// add(4,6)
+// document.write(result)
+
+
+// Argument object similar to kwargs and args in python
+
+// function add1(){
+//     document.write(arguments.length);
+//     document.write(arguments[1]);
+// }
+
+// add1(2,3)
+// add1(2,3,4)
+// add1(4,5,6,7)
+
+// find sum of number
+
+function sum(){
+    if(arguments.length==0){
+        document.write("No Paramter passed")
+    }
+    else{
+        sum = 0
+        for(let i = 0; i < arguments.length;i++){
+            sum = sum + arguments[i];
+        }
+        document.write(sum)
+    }
+}
+
+// sum(2)
+sum(4,7)
+
+
+//  Returning a value in JavaScript
+
