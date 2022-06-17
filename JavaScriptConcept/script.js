@@ -366,6 +366,8 @@ let person = {
     'city name':"lakhisarai",
     sayHello (){
         document.write("Hello I am "+ person.firstname +"  and I have a "+ car.brand +" car ");
+        document.write("<br><br>");
+        document.write("Hello I am "+ this.firstname +"  and I have a "+ car.brand +" car ");
     }
 };
 // document.write(person.firstname);
@@ -407,3 +409,11 @@ let car = {
 }
 
 person.sayHello();
+
+
+// Math object
+
+document.write(Math.PI);
+let x = Math.round(4.8)
+document.write("<br><br>")
+document.write(x);
