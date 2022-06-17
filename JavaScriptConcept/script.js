@@ -363,7 +363,10 @@ let person = {
     lastname: "Anand",
     branch: "CSE",
     clg: "IIT",
-    'city name':"lakhisarai"
+    'city name':"lakhisarai",
+    sayHello (){
+        document.write("Hello I am "+ person.firstname +"  and I have a "+ car.brand +" car ");
+    }
 };
 // document.write(person.firstname);
 // // 2nd method 
@@ -382,16 +385,25 @@ for(let key in person){
 
 
 // Method in object
-person.sayHello = function(){
-    console.log("Hello");
-    document.write("Hello");
+// person.sayHello = function(){
+//     console.log("Hello");
+//     document.write("Hello");
+// }
+
+// function greet(){
+//     console.log("Hello World");
+//     document.write("Hello JavaScript");
+// }
+
+
+
+// person.sayHello = greet;
+
+// This keyword in javascript
+
+let car = {
+    brand: "Tata",
+    model: "Safari"
 }
 
-function greet(){
-    console.log("Hello World");
-    document.write("Hello JavaScript");
-}
-
-// person.sayHello();
-
-person.sayHello = greet;
+person.sayHello();
