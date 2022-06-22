@@ -308,21 +308,21 @@ outerloop:for(let counted = 0; counted<=10;counted++){
 
 // find sum of number
 
-function sum(){
-    if(arguments.length==0){
-        document.write("No Paramter passed")
-    }
-    else{
-        sum = 0
-        for(let i = 0; i < arguments.length;i++){
-            sum = sum + arguments[i];
-        }
-        document.write(sum)
-    }
-}
+// function sum(){
+//     if(arguments.length==0){
+//         document.write("No Paramter passed")
+//     }
+//     else{
+//         sum = 0
+//         for(let i = 0; i < arguments.length;i++){
+//             sum = sum + arguments[i];
+//         }
+//         document.write(sum)
+//     }
+// }
 
-// sum(2)
-sum(4,7)
+// // sum(2)
+// sum(4,7)
 
 
 //  Returning a value in JavaScript
@@ -358,18 +358,18 @@ document.write("<br><br>")
 
 // Objects in JavaScript
 
-let person = {
-    firstname: "Ashish",
-    lastname: "Anand",
-    branch: "CSE",
-    clg: "IIT",
-    'city name':"lakhisarai",
-    sayHello (){
-        document.write("Hello I am "+ person.firstname +"  and I have a "+ car.brand +" car ");
-        document.write("<br><br>");
-        document.write("Hello I am "+ this.firstname +"  and I have a "+ car.brand +" car ");
-    }
-};
+// let person = {
+//     firstname: "Ashish",
+//     lastname: "Anand",
+//     branch: "CSE",
+//     clg: "IIT",
+//     'city name':"lakhisarai",
+//     sayHello (){
+//         document.write("Hello I am "+ person.firstname +"  and I have a "+ car.brand +" car ");
+//         document.write("<br><br>");
+//         document.write("Hello I am "+ this.firstname +"  and I have a "+ car.brand +" car ");
+//     }
+// };
 // document.write(person.firstname);
 // // 2nd method 
 // document.write(person['firstname']);
@@ -379,11 +379,11 @@ let person = {
 
 
 
-for(let key in person){
-    document.write(key + " : " + person[key]);
-    document.write("<br><br>")
-    console.log(key + "  : " + person[key]);
-}
+// for(let key in person){
+//     document.write(key + " : " + person[key]);
+//     document.write("<br><br>")
+//     console.log(key + "  : " + person[key]);
+// }
 
 
 // Method in object
@@ -403,17 +403,28 @@ for(let key in person){
 
 // This keyword in javascript
 
-let car = {
-    brand: "Tata",
-    model: "Safari"
-}
+// let car = {
+//     brand: "Tata",
+//     model: "Safari"
+// }
 
-person.sayHello();
+// person.sayHello();
 
 
 // Math object
 
-document.write(Math.PI);
-let x = Math.round(4.8)
-document.write("<br><br>")
+// document.write(Math.PI);
+// let x = Math.round(4.8)
+// document.write("<br><br>")
+// document.write(x);
+
+// Random Number
+
+// let c = Math.random();
+// //document.write(c); //always create number in between 0 to 1
+// // document.write(c*10);  //multiply by 10 always create number in between 1 to 9
+// document.write(c*100); // always create number in between 10 to 99
+
+let x = Math.floor(Math.random()*10);
+// remove after decimal digit use floor method
 document.write(x);
