@@ -425,6 +425,15 @@ document.write("<br><br>")
 // // document.write(c*10);  //multiply by 10 always create number in between 1 to 9
 // document.write(c*100); // always create number in between 10 to 99
 
-let x = Math.floor(Math.random()*10);
-// remove after decimal digit use floor method
-document.write(x);
+// let x = Math.floor(Math.random()*10);
+// // remove after decimal digit use floor method
+// document.write(x);
+
+
+// Find number in between 15 to 25 
+ function nthnum(max,min){
+    let num = Math.floor(Math.random() * (max-min))+min ;
+    return num
+ }
+
+document.write(nthnum(25,15));
