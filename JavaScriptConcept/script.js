@@ -466,11 +466,82 @@ else{
 
 // New Keyword
 
-var person = new Object();
-person.name = "Ashish Anand";
-document.write(person.name)
+// var person = new Object();
+// person.name = "Ashish Anand";
+// document.write(person.name)
 
-// Getter and Setter
+// Getter and Setter method
+
+// var student ={
+// name: "Ashish anand",
+// id: 2,
+// add: "Bihar",
+// getname: function(){
+//     return this.name.toUpperCase();
+// },
+
+// Same thing we wiil use another way
+// get getname(){
+//     return this.name.toUpperCase();
+// },
+//  getadd: function(){
+//     return this.add.toUpperCase();
+// },
+//   set setname(n){
+//     this.name = n.toUpperCase();
+// }
+// };
+// document.write(student.getname());
+// document.write("<br>");
+// document.write(student.getadd());
+// student.setname ="anand ashish";
+// document.write(student);
+// console.log(student)
+
+// Object Constructor function
+// var student1 = {
+//     firstname: "ashish",
+//     lastname:"anand",
+//     age:25,
+//     class:five,
+//     add:lkr
+// }
+// Same thing done by object constructor
+// function student1(firstname,lastname,age,classes,addr){
+//     this.firstname =  firstname,
+//     this.lastname =  lastname,
+//     this.age = age,
+//     this.classes =  classes,
+//     this.addr = addr
+//     // this.fullname = function(){
+//     //     return this.firstname + " " + this.lastname;
+//     // }
+// }
+// Javascript prototype :- it helps to add extra property in the object
+// student1.prototype.nationality = "Indain";
+// var student1 = new student1("ashish","anand",25,"tenth","lkr");
+// // add new property in function by using prototype
+// // student1.nationality = "Indain";
+
+// console.log(student1);
+
+//nested object in javascript
+
+var user = {
+    id: 101,
+    email: "xyz@gmail.com",
+    personinfo:{
+        name: "Ashish",
+        address:{
+            steet: "Bharat gas",
+            city: "lkr",
+            country: "india",
+        }
+    }
+}
+
+console.log(user.personinfo.address)
+
 
 
 
