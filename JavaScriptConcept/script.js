@@ -431,9 +431,49 @@ document.write("<br><br>")
 
 
 // Find number in between 15 to 25 
- function nthnum(max,min){
-    let num = Math.floor(Math.random() * (max-min))+min ;
-    return num
- }
+//  function nthnum(max,min){
+//     let num = Math.floor(Math.random() * (max-min))+min ;
+//     return num
+//  }
 
-document.write(nthnum(25,15));
+// document.write(nthnum(25,15));
+
+// Date method in javascript
+// let x = new Date();
+// document.write(x);
+
+// let y = new Date(2018,11,13,10,18,51,21);
+// document.write(y);
+
+// Find the date after 50 days
+
+// let a =  new Date(2020,11,13,10,18,51,21);
+// let b =  new Date(2020,11,13,10,18,51,21);
+// b.setDate(a.getDate()+50);
+// document.write(a);
+// document.write(b);
+
+document.write("<br>")
+// Compare 2 dates
+let m =  new Date(2020,11,13,10,18,51,21);
+let n =  new Date();
+if(m<n){
+    document.write(m);
+}
+else{
+    document.write(n);
+}
+
+// New Keyword
+
+var person = new Object();
+person.name = "Ashish Anand";
+document.write(person.name)
+
+// Getter and Setter
+
+
+
+
+
+
