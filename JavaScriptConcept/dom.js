@@ -1,0 +1,1 @@
+// How to select an element by id in JavaScript

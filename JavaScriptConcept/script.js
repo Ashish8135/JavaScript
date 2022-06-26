@@ -543,6 +543,19 @@ var user = {
 console.log(user.personinfo.address)
 
 
+// Hoisting in javascript
+
+hello();
+function hello(){
+    console.log("Hello World");
+}
+
+let x;
+x =  7;
+console.log(x);
+
+
+
 
 
 

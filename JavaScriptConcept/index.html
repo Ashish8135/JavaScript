@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript Tutorials </title>
-    
+    <title>DOM Tutorials </title>
+    <!-- <script src="dom.js"></script> -->
 </head>
 <body>
-    <h1>JavaScript Tutorials</h1>
-    <script src="script.js"></script>
+    <ul>
+        <li class="cl">List1</li>
+        <li id="first">list2</li>
+        <li>list3</li>
+        <li class="cl">list4</li>
+    </ul> 
+    <script>
+        // let elm = document.getElementById("first");
+        // elm.innerHTML= "<p>Hello DOM How are you </p>";
+        // console.log(elm);
+        // getelementByClass
+        let ele = document.getElementsByClassName("cl");
+        // console.log(ele.length);
+        for(let i =0; i<ele.length;i++){
+            ele[i].innerHTML = "<p> Hello DOM Right </p>";
+        }
+        
+    </script>
 </body>
 </html>
