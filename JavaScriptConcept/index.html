@@ -24,7 +24,7 @@
         <p>para4</p>
         <h2>heading4</h2>
     </div> -->
-    <ul>
+    <!-- <ul>
         <li id ="intro">list 10</li>
         <li>list 20</li>
         <li>list 30</li>
@@ -36,7 +36,7 @@
         <li>list b</li>
         <li>list c</li>
         <li>list d</li>
-    </ul>
+    </ul> -->
 
 
 
@@ -51,6 +51,19 @@
         <p class="intro">para4</p>
         <h2 class="intro">heading4</h2>
     </div> -->
+
+    <!--  Create and Append Element in JavaScript -->
+        <!-- <div id ="intro">
+            <p>THis is the creating and appending element</p>
+        </div> -->
+        <!-- // Insert Before an Element in JavaScript -->
+
+        <ul id="list">
+            <li>List1</li>
+            <li>List2</li>
+            <li>List3</li>
+            <li>List4</li>
+        </ul>
 
     <script>
         // let elm = document.getElementById("first");
@@ -81,9 +94,24 @@
         // }
         
         //  Traversing elements in JavaScript first select parent element and then select child element
-        let elem = document.getElementById("intro");
-        let prt = elem.parentElement;
-        console.log(prt);
+        // let elem = document.getElementById("intro");
+        // let prt = elem.parentElement;
+        // console.log(prt);
+
+        //  Create and Append Element in JavaScript
+            // let cret = document.getElementById("intro");
+            // let creath1 = document.createElement("h1");
+            // let text = document.createTextNode("Hello This is appending elements");
+            // console.log(creath1.appendChild(text));
+            // cret.appendChild(creath1);
+            // console.log(cret.appendChild(creath1));
+
+            // Insert Before an Element in JavaScript
+            let doc = document.getElementById("list");
+            let item = document.createElement("li");
+            item.textContent = "New List 5";
+            let pos = doc.firstElementChild;
+            doc.insertBefore(item,pos);
 
     </script>
 </body>
