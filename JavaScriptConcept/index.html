@@ -110,7 +110,7 @@
             let doc = document.getElementById("list");
             let item = document.createElement("li");
             item.textContent = "New List 5";
-            let pos = doc.firstElementChild;
+            let pos = doc.firstElementChild.nextElementSibling;
             doc.insertBefore(item,pos);
 
     </script>
