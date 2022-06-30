@@ -113,6 +113,28 @@
             let pos = doc.firstElementChild.nextElementSibling;
             doc.insertBefore(item,pos);
 
+            // Remove Child Element in JavaScript
+            let parent = document.getElementById("list");
+            let elm = parent.firstElementChild.nextElementSibling.nextElementSibling;
+            parent.removeChild(elm);
+
+            // Clone or Copy Element in JavaScript
+            let clon = document.getElementById("list");
+            let clonelm = clon.cloneNode(true);
+            // change id for 1st one
+            clonelm.id = "list-menu"
+            // console.log(clonelm); debug
+            document.body.appendChild(clonelm);
+
+            // Replace Element in JavaScript
+            let parentss = document.getElementById("list");
+            let cretchild = document.createElement("li");
+            cretchild.textContent = "Maximo";
+            let replacechild = parentss.firstElementChild.nextElementSibling;
+            parentss.replaceChild(cretchild,replacechild);
+
+            // Change Attribute in JavaScript 
+
     </script>
 </body>
 </html>
